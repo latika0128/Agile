@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Link Bank</h2>
+  <form method="post">
+    <label>Bank name: <input name="bank"></label><br/><br/>
+    <label>VPA / UPI ID: <input name="vpa" required></label><br/><br/>
+    <button type="submit">Link</button>
+  </form>
+{% endblock %}

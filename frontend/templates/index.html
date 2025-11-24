@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Welcome</h2>
+  {% if user %}
+    <p>Logged in as {{user.phone}} {% if user.name %}({{user.name}}){% endif %}</p>
+    <p><a href="/logout">Logout</a></p>
+    <p>Bank: {{ user.bank.vpa if user.bank else 'Not linked' }}</p>
+  {% else %}
+    <p>Demo frontend. Please <a href="/signup">signup</a> or <a href="/login">login</a>.</p>
+  {% endif %}
+{% endblock %}

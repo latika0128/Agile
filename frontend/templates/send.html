@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Send Money</h2>
+  <form method="post">
+    <label>To (VPA / Phone / Account): <input name="to" required></label><br/><br/>
+    <label>Amount: <input name="amount" required></label><br/><br/>
+    <button type="submit">Send</button>
+  </form>
+{% endblock %}
